@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sir</title>
+  <link href="./style.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"
+    integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body
+  class="flex flex-col items-center justify-between min-h-screen min-w-full max-w-full bg-gradient-to-tr from-[#191712] to-[#201e17]">
+  <div
+    class="max-w-max border border-[#2e2b27] shadow-stone-950 shadow-md rounded-2xl mx-2 mt-16 pt-2 pb-6 px-5 sm:px-14 bg-[#23211e]">
+    <form id="sir-form" name="sir">
+      <label for="number-people" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Всего человек в
+        группе</label>
+      <input required type="number" name="number-people" id="number-people"
+        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d] outline-0 focus:ring-1 focus:ring-[#ffae33]">
+      <label for="number-sick" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Количество
+        заболевших</label>
+      <input required type="number" name="number-sick" id="number-sick"
+        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d]  outline-0 focus:ring-1 focus:ring-[#ffae33]">
+      <label for="speed" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Скорость
+        распространения</label>
+      <input required type="number" name="speed" id="speed"
+        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d]  outline-0 focus:ring-1 focus:ring-[#ffae33]">
+      <label for="period" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Рассматриваемый
+        временной
+        промежуток</label>
+      <input required type="number" name="period" id="period"
+        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d]  outline-0 focus:ring-1 focus:ring-[#ffae33]">
+      <button type="submit" class="flex text-center items-center justify-center shadow-md w-full mt-7 pt-2 pr-5 pb-2 pl-5 text-base outline-0
+        font-medium text-black bg-[#ffae33] rounded-xl transition duration-500 ease-in-out transform
+        hover:bg-[#fcc666]">Расчитать</button>
+    </form>
+  </div>
+  <canvas id="chart" class="max-w-2xl max-h-96 mx-5 my-10"></canvas>
+  <a href="https://github.com/SweetBubaleXXX" class="text-center p-2 text-[#514f4d] hover:underline">By
+    SweetBubaleXXX</a>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

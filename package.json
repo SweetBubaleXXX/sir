@@ -1,0 +1,14 @@
+{
+  "name": "sir",
+  "version": "1.0.0",
+  "description": "sir",
+  "author": "SweetBubaleXXX",
+  "license": "MIT",
+  "scripts": {
+    "tailwind-dev": "npx tailwindcss -i ./public/src/tailwind.css -o ./public/style.css --watch",
+    "tailwind-minify": "npx tailwindcss -i ./public/src/tailwind.css -o ./public/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
