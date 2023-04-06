@@ -16,23 +16,19 @@
   <div
     class="max-w-max border border-[#2e2b27] shadow-stone-950 shadow-md rounded-2xl mx-2 mt-16 pt-2 pb-6 px-5 sm:px-14 bg-[#23211e]">
     <form id="sir-form" name="sir">
-      <label for="number-people" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Всего человек в
+      <label for="number-people" class="form-label">Всего человек в
         группе</label>
-      <input required type="number" name="number-people" id="number-people"
-        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d] outline-0 focus:ring-1 focus:ring-[#ffae33]">
-      <label for="number-sick" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Количество
+      <input required type="number" name="number-people" id="number-people" class="form-input">
+      <label for="number-sick" class="form-label">Количество
         заболевших</label>
-      <input required type="number" name="number-sick" id="number-sick"
-        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d]  outline-0 focus:ring-1 focus:ring-[#ffae33]">
-      <label for="speed" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Скорость
+      <input required type="number" name="number-sick" id="number-sick" class="form-input">
+      <label for="speed" class="form-label">Скорость
         распространения</label>
-      <input required type="number" name="speed" id="speed"
-        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d]  outline-0 focus:ring-1 focus:ring-[#ffae33]">
-      <label for="period" class="block text-sm font-medium leading-6 mt-4 text-gray-100">Рассматриваемый
+      <input required type="number" step="0.01" name="speed" id="speed" class="form-input">
+      <label for="period" class="form-label">Рассматриваемый
         временной
         промежуток</label>
-      <input required type="number" name="period" id="period"
-        class="block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d]  outline-0 focus:ring-1 focus:ring-[#ffae33]">
+      <input required type="number" name="period" id="period" class="form-input">
       <button type="submit" class="flex text-center items-center justify-center shadow-md w-full mt-7 pt-2 pr-5 pb-2 pl-5 text-base outline-0
         font-medium text-black bg-[#ffae33] rounded-xl transition duration-500 ease-in-out transform
         hover:bg-[#fcc666]">Расчитать</button>

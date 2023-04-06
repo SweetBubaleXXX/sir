@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .form-label {
+        @apply block text-sm font-medium leading-6 mt-4 text-gray-100;
+    }
+
+    .form-input {
+        @apply block w-full rounded-md border-0 my-2 px-1.5 py-1 text-center text-gray-100 shadow-md bg-[#514f4d] outline-0 focus:ring-1 focus:ring-[#ffae33];
+    }
+}
