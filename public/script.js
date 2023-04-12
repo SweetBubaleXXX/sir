@@ -46,7 +46,7 @@ form.addEventListener('submit', e => {
 function sir(total, sick, speed, period) {
     const sickPoints = [];
     for (let t = 0; t < period; t++) {
-        sick = Math.ceil(Math.exp(((total - sick) * speed * t) / total));
+        sick = Math.min(total, Math.ceil(Math.exp(((total - sick) * speed * t) / total)));
         sickPoints.push(sick);
     }
     return sickPoints;
