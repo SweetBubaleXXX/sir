@@ -4,11 +4,13 @@
   "description": "sir",
   "author": "SweetBubaleXXX",
   "license": "MIT",
-  "scripts": {
-    "tailwind-dev": "npx tailwindcss -i ./public/src/tailwind.css -o ./public/style.css --watch",
-    "tailwind-minify": "npx tailwindcss -i ./public/src/tailwind.css -o ./public/style.css --minify"
-  },
+  "scripts": {},
   "devDependencies": {
-    "tailwindcss": "^3.3.1"
+    "chart.js": "^4.2.1",
+    "tailwindcss": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
   }
 }
