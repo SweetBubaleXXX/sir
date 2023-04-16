@@ -1,3 +1,5 @@
+import './style.css';
+
 import Chart from 'chart.js/auto';
 
 const chart = new Chart(
@@ -10,7 +12,7 @@ const chart = new Chart(
           grid: { color: '#2e2b27' },
           title: {
             display: true,
-            text: 'Время'
+            text: 'Год'
           }
         },
         y: {
@@ -23,7 +25,7 @@ const chart = new Chart(
 
 const form = document.getElementById('sir-form');
 
-form.addEventListener('submit', e => {
+form && form.addEventListener('submit', e => {
   e.preventDefault();
   const formFields = document.forms.sir.elements;
   const sickPoints = sir(
@@ -34,7 +36,7 @@ form.addEventListener('submit', e => {
   );
   console.log(sickPoints);
   chart.data = {
-    labels: sickPoints.map((_, i) => i),
+    labels: sickPoints.map((_, i) => +formFields['year-starting'].value + i),
     datasets: [{
       label: 'Количество заболевших',
       data: sickPoints,
